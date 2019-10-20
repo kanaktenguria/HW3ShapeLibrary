@@ -2,7 +2,7 @@
  *
  *  Rectangle
  *
- *  This class represents rectangle objects that can be moved.  Users of a rectangle can also get its area.
+ *  This class represents rectangle objects that can be moved or scaled.  Users of a rectangle can also get its area, length and breadth.
  *
  */
 @SuppressWarnings("WeakerAccess")
@@ -11,6 +11,10 @@ public class Rectangle {
     private Point point2;
     private Point point3;
     private Point point4;
+    private Line line1;
+    private Line line2;
+    private Line line3;
+    private Line line4;
 
     /**
      * Constructor based on x-y Locations
@@ -29,6 +33,7 @@ public class Rectangle {
         point2 = new Point(x2, y2);
         point3 = new Point(x3, y3);
         point4 = new Point(x4, y4);
+        checkValidRectangle(point1,point2,point3,point4);
     }
 
     /**
@@ -47,6 +52,7 @@ public class Rectangle {
         this.point2 = point2.copy();
         this.point3 = point3.copy();
         this.point4 = point4.copy();
+        checkValidRectangle(point1,point2,point3,point4);
     }
 
     /**
@@ -93,13 +99,62 @@ public class Rectangle {
      */
     public void scale(double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
-        radius *= scaleFactor;
+        double x2 = point2.getX();
+        double x3 = point3.getX();
+        double y3 = point3.getY();
+        double y4 = point4.getY();
+        x2 = (x2*scaleFactor)-x2;
+        x3 = (x3*scaleFactor)-x3;
+        y3 = (y3*scaleFactor)-y3;
+        y4 = (y4*scaleFactor)-y4;
+        point2.moveX(x2);
+        point3.moveX(x3);
+        point3.moveY(y3);
+        point4.moveY(y4);
+    }
+
+    /**
+     * @return  The length of the circle.
+     */
+    public double computeLength() throws ShapeException {
+        double length = line1.computeLength();
+        return length;
+    }
+
+    /**
+     * @return  The breadth of the circle.
+     */
+    public double computeBreadth() throws ShapeException {
+        double breadth = line2.computeLength();
+        return breadth;
     }
 
     /**
      * @return  The area of the circle.
      */
     public double computeArea() {
-        return Math.PI * Math.pow(radius, 2);
+        return (line1.computeLength()*line2.computeLength());
+    }
+
+    /**
+     * Check whether multiplication of slope of the adjacent lines is -1.
+     */
+    public void checkValidRectangle(Point point1, Point point2, Point point3, Point point4) throws ShapeException {
+        line1 = new Line(point1, point2);
+        line2 = new Line(point2, point3);
+        line3 = new Line(point3, point4);
+        line4 = new Line(point4, point1);
+        double slope1= line1.computeSlope();
+        double slope2= line2.computeSlope();
+        double slope3= line3.computeSlope();
+        double slope4= line4.computeSlope();
+        int checkSlope12= (int) Math.round(slope1*slope2);
+        int checkSlope23= (int) Math.round(slope2*slope3);
+        int checkSlope34= (int) Math.round(slope3*slope4);
+        int checkSlope41= (int) Math.round(slope4*slope1);
+        assert checkSlope12 == -1;
+        assert checkSlope23 == -1;
+        assert checkSlope34 == -1;
+        assert checkSlope41 == -1;
     }
 }
