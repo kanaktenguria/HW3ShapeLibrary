@@ -52,7 +52,7 @@ public class RectangleTest {
         assertEquals(2, myRectangle.getPoint3().getY(),0);
         assertEquals(0, myRectangle.getPoint4().getX(),0);
         assertEquals(2, myRectangle.getPoint4().getY(),0);
-        }
+    }
 
     @Test(expected = ShapeException.class)
     public void testInvalidConstruction() throws ShapeException {

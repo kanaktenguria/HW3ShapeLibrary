@@ -116,7 +116,7 @@ public class Rectangle {
     }
 
     /**
-     * @return  The length of the circle.
+     * @return  The length of the rectangle.
      */
     public double computeLength() throws ShapeException {
         double length = line1.computeLength();
@@ -124,7 +124,7 @@ public class Rectangle {
     }
 
     /**
-     * @return  The breadth of the circle.
+     * @return  The breadth of the rectangle.
      */
     public double computeBreadth() throws ShapeException {
         double breadth = line2.computeLength();
@@ -132,7 +132,7 @@ public class Rectangle {
     }
 
     /**
-     * @return  The area of the circle.
+     * @return  The area of the rectangle.
      */
     public double computeArea() {
         return (line1.computeLength()*line2.computeLength());
@@ -153,11 +153,14 @@ public class Rectangle {
         assert Math.round(Math.sqrt(Math.pow(length, 2) + Math.pow(breadth, 2))) == Math.round(diagonalLength);
     }
 
+    /**
+     * Renders the shape to a file.
+     */
     public void render(Graphics2D graphics) throws ShapeException {
         int initialX = (int) getPoint1().getX();
         int initialY = (int) getPoint1().getY();
         int length = (int) computeLength();
         int breadth = (int) computeBreadth();
-        graphics.drawRect(x, y, length, breadth);
+        graphics.drawRect(initialX, initialY, length, breadth);
     }
 }
