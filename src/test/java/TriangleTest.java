@@ -133,6 +133,5 @@ public class TriangleTest {
 //
 //        File file = new File(outputFilename);
 //        ImageIO.write(bufferedImage, "png", file);
-//        graphics.dispose();
 //    }
 }

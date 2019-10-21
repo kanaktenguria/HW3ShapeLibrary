@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PointTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-10-21T23:25:41" hostname="Phoenix" time="0.011">
+  <properties/>
+  <testcase name="testClone" classname="PointTest" time="0.006"/>
+  <testcase name="testMoveX" classname="PointTest" time="0.001"/>
+  <testcase name="testMoveY" classname="PointTest" time="0.001"/>
+  <testcase name="testMove" classname="PointTest" time="0.001"/>
+  <testcase name="testInvalidConstruction" classname="PointTest" time="0.001"/>
+  <testcase name="testValidConstruction" classname="PointTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

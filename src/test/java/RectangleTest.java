@@ -139,10 +139,8 @@ public class RectangleTest {
     @Test
     public void render() throws Exception {
 
-        String outputFilename = "Rectangle.png";
-
-        BufferedImage bufferedImage = new BufferedImage(400, 400, BufferedImage.TYPE_INT_RGB);
-        Graphics2D graphics = bufferedImage.createGraphics();
+        BufferedImage bImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bImage.createGraphics();
         graphics.setColor(Color.white);
         Point point1 = new Point(8, 20);
         Point point2 = new Point(39, 2);
@@ -152,8 +150,6 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(point1, point2, point3, point4);
         rectangle.render(graphics);
 
-        File file = new File(outputFilename);
-        ImageIO.write(bufferedImage, "png", file);
-        graphics.dispose();
+        assertTrue(ImageIO.write(bImage, "png", new File("output/rectangle.png")));
     }
 }
