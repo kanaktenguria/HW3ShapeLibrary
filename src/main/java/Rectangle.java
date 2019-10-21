@@ -144,17 +144,10 @@ public class Rectangle {
         line2 = new Line(point2, point3);
         line3 = new Line(point3, point4);
         line4 = new Line(point4, point1);
-        double slope1= line1.computeSlope();
-        double slope2= line2.computeSlope();
-        double slope3= line3.computeSlope();
-        double slope4= line4.computeSlope();
-        int checkSlope12= (int) Math.round(slope1*slope2);
-        int checkSlope23= (int) Math.round(slope2*slope3);
-        int checkSlope34= (int) Math.round(slope3*slope4);
-        int checkSlope41= (int) Math.round(slope4*slope1);
-        assert checkSlope12 == -1;
-        assert checkSlope23 == -1;
-        assert checkSlope34 == -1;
-        assert checkSlope41 == -1;
+        double length = computeLength();
+        double breadth = computeBreadth();
+        Line diagonalLine = new Line(point1, point3);
+        double diagonalLength= diagonalLine.computeLength();
+        assert Math.round(Math.sqrt(Math.pow(length, 2) + Math.pow(breadth, 2))) == Math.round(diagonalLength);
     }
 }
