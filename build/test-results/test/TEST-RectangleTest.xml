@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RectangleTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-10-21T07:15:38" hostname="Phoenix" time="0.008">
+<testsuite name="RectangleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-21T08:10:17" hostname="Phoenix" time="0.282">
   <properties/>
-  <testcase name="move" classname="RectangleTest" time="0.003"/>
-  <testcase name="scale" classname="RectangleTest" time="0.0"/>
-  <testcase name="computeArea" classname="RectangleTest" time="0.001"/>
-  <testcase name="computeLength" classname="RectangleTest" time="0.0"/>
-  <testcase name="testInvalidConstruction" classname="RectangleTest" time="0.001"/>
-  <testcase name="testValidConstruction" classname="RectangleTest" time="0.0"/>
-  <testcase name="computeBreadth" classname="RectangleTest" time="0.0"/>
+  <testcase name="render" classname="RectangleTest" time="0.282"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

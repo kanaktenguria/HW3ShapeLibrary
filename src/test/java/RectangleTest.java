@@ -1,5 +1,10 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class RectangleTest {
@@ -131,4 +136,28 @@ public class RectangleTest {
         assertEquals(578, myRectangle.computeArea(),0.1);
     }
 
+    @Test
+    public void render() throws Exception {
+
+        String outputFilename = "Rectangle.png";
+
+        BufferedImage bufferedImage = new BufferedImage(400, 400, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.white);
+        int numberOfRectangle=1;
+        while (numberOfRectangle!=10){
+            Point point1 = new Point(0, 0);
+            Point point2 = new Point(2*numberOfRectangle, 0);
+            Point point3 = new Point(2*numberOfRectangle, 4*numberOfRectangle);
+            Point point4 = new Point(0, 4*numberOfRectangle);
+
+            Rectangle rectangle = new Rectangle(point1, point2, point3, point4);
+            rectangle.render(graphics);
+            numberOfRectangle +=1;
+        }
+
+        File file = new File(outputFilename);
+        ImageIO.write(bufferedImage, "png", file);
+        graphics.dispose();
+    }
 }

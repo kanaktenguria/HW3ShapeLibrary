@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  *
  *  Rectangle
@@ -149,5 +151,13 @@ public class Rectangle {
         Line diagonalLine = new Line(point1, point3);
         double diagonalLength= diagonalLine.computeLength();
         assert Math.round(Math.sqrt(Math.pow(length, 2) + Math.pow(breadth, 2))) == Math.round(diagonalLength);
+    }
+
+    public void render(Graphics2D graphics) throws ShapeException {
+        int x = (int) getPoint1().getX();
+        int y = (int) getPoint1().getY();
+        int length = (int) computeLength();
+        int breadth = (int) computeBreadth();
+        graphics.drawRect(x, y, length, breadth);
     }
 }
