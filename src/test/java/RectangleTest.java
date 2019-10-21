@@ -139,7 +139,7 @@ public class RectangleTest {
     @Test
     public void render() throws Exception {
 
-        BufferedImage bImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
+        BufferedImage bImage = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
         Graphics2D graphics = bImage.createGraphics();
         graphics.setColor(Color.white);
         Point point1 = new Point(8, 20);

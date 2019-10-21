@@ -92,8 +92,8 @@ public class Point {
      * @return  Renders the point to a file
      */
     public void render(Graphics2D graphics) throws ShapeException {
-        int x = (int) (this.getX());
-        int y = (int) (this.getY());
+        int x = (int) (getX());
+        int y = (int) (getY());
         graphics.drawLine(x, y, x, y);
     }
 }

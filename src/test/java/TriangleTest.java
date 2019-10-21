@@ -115,23 +115,18 @@ public class TriangleTest {
 //        assertEquals(578, myRectangle.computeArea(),0.1);
 //    }
 //
-//    @Test
-//    public void render() throws Exception {
-//
-//        String outputFilename = "Rectangle.png";
-//
-//        BufferedImage bufferedImage = new BufferedImage(400, 400, BufferedImage.TYPE_INT_RGB);
-//        Graphics2D graphics = bufferedImage.createGraphics();
-//        graphics.setColor(Color.white);
-//        Point point1 = new Point(8, 20);
-//        Point point2 = new Point(39, 2);
-//        Point point3 = new Point(47, 16);
-//        Point point4 = new Point(16, 34);
-//
-//        Rectangle rectangle = new Rectangle(point1, point2, point3, point4);
-//        rectangle.render(graphics);
-//
-//        File file = new File(outputFilename);
-//        ImageIO.write(bufferedImage, "png", file);
-//    }
+    @Test
+    public void render() throws Exception {
+
+        BufferedImage bImage = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bImage.createGraphics();
+        graphics.setColor(Color.white);
+        Point point1 = new Point(1, 10);
+        Point point2 = new Point(40, 20);
+        Point point3 = new Point(10, 30);
+        Triangle myTriangle = new Triangle(point1, point2, point3);
+        myTriangle.render(graphics);
+
+        assertTrue(ImageIO.write(bImage, "png", new File("output/triangle.png")));
+    }
 }

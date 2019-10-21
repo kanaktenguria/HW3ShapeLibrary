@@ -109,10 +109,10 @@ public class Line {
      * Renders the line to a file.
      */
     public void render(Graphics2D graphics) {
-        int x1 = (int) (this.point1.getX());
-        int y1 = (int) (this.point1.getY());
-        int x2 = (int) (this.point2.getX());
-        int y2 = (int) (this.point2.getY());
+        int x1 = (int) (point1.getX());
+        int y1 = (int) (point1.getY());
+        int x2 = (int) (point2.getX());
+        int y2 = (int) (point2.getY());
         graphics.drawLine(x1, y1, x2, y2);
     }
 }

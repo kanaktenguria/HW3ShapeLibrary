@@ -157,10 +157,21 @@ public class Rectangle {
      * Renders the shape to a file.
      */
     public void render(Graphics2D graphics) throws ShapeException {
-        int initialX = (int) getPoint1().getX();
-        int initialY = (int) getPoint1().getY();
-        int length = (int) computeLength();
-        int breadth = (int) computeBreadth();
-        graphics.drawRect(initialX, initialY, length, breadth);
+        int[] xCoordinate = new int[5];
+        int[] yCoordinate = new int[5];
+
+        xCoordinate[0] = (int) getPoint1().getX();
+        xCoordinate[1] = (int) getPoint2().getX();
+        xCoordinate[2] = (int) getPoint3().getX();
+        xCoordinate[3] = (int) getPoint4().getX();
+        xCoordinate[4] = xCoordinate[0];
+
+        yCoordinate[0] = (int) this.getPoint1().getY();
+        yCoordinate[1] = (int) this.getPoint2().getY();
+        yCoordinate[2] = (int) this.getPoint3().getY();
+        yCoordinate[3] = (int) this.getPoint4().getY();
+        yCoordinate[4] = yCoordinate[0];
+
+        graphics.drawPolyline(xCoordinate, yCoordinate, 5);
     }
 }
