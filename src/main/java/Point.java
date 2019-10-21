@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * Point
  *
@@ -79,5 +81,19 @@ public class Point {
      */
     public Point copy() throws ShapeException {
         return new Point(x, y);
+    }
+
+    /**
+     * @return  zero as area of point.
+     */
+    public double computeArea(){return 0;}
+
+    /**
+     * @return  Renders the point to a file
+     */
+    public void render(Graphics2D graphics) throws ShapeException {
+        int x = (int) (this.getX());
+        int y = (int) (this.getY());
+        graphics.drawLine(x, y, x, y);
     }
 }

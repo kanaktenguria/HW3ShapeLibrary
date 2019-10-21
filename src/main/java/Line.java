@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  *
  *  Line
@@ -72,5 +74,45 @@ public class Line {
      */
     public double computeSlope() {
         return (point2.getX() - point1.getX())/(point2.getY() - point1.getY());
+    }
+
+    /**
+     * @return  zero as area of line.
+     */
+    public double computeArea(){return 0;}
+
+    /**
+     * Scale the line
+     *
+     * @param scaleFactor       a non-negative double that represents the percentage to scale the line.
+     *                          0>= and <1 to shrink.
+     *                          >1 to grow.
+     * @throws ShapeException   Exception thrown if the scale factor is not valid
+     */
+    public void scale(double scaleFactor) throws ShapeException {
+        Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
+        double x1 = point1.getX();
+        double x2 = point2.getX();
+        double y1 = point1.getY();
+        double y2 = point2.getY();
+        x1 = (x1*scaleFactor)-x1;
+        x2 = (x2*scaleFactor)-x2;
+        y1 = (y1*scaleFactor)-y1;
+        y2 = (y2*scaleFactor)-y2;
+        point1.moveX(x1);
+        point1.moveY(y1);
+        point2.moveX(x2);
+        point2.moveY(y2);
+    }
+
+    /**
+     * Renders the line to a file.
+     */
+    public void render(Graphics2D graphics) {
+        int x1 = (int) (this.point1.getX());
+        int y1 = (int) (this.point1.getY());
+        int x2 = (int) (this.point2.getX());
+        int y2 = (int) (this.point2.getY());
+        graphics.drawLine(x1, y1, x2, y2);
     }
 }
