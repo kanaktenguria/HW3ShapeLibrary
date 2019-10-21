@@ -154,8 +154,8 @@ public class Rectangle {
     }
 
     public void render(Graphics2D graphics) throws ShapeException {
-        int x = (int) getPoint1().getX();
-        int y = (int) getPoint1().getY();
+        int initialX = (int) getPoint1().getX();
+        int initialY = (int) getPoint1().getY();
         int length = (int) computeLength();
         int breadth = (int) computeBreadth();
         graphics.drawRect(x, y, length, breadth);

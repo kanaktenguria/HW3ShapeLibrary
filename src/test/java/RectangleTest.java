@@ -144,17 +144,13 @@ public class RectangleTest {
         BufferedImage bufferedImage = new BufferedImage(400, 400, BufferedImage.TYPE_INT_RGB);
         Graphics2D graphics = bufferedImage.createGraphics();
         graphics.setColor(Color.white);
-        int numberOfRectangle=1;
-        while (numberOfRectangle!=10){
-            Point point1 = new Point(0, 0);
-            Point point2 = new Point(2*numberOfRectangle, 0);
-            Point point3 = new Point(2*numberOfRectangle, 4*numberOfRectangle);
-            Point point4 = new Point(0, 4*numberOfRectangle);
+        Point point1 = new Point(8, 20);
+        Point point2 = new Point(39, 2);
+        Point point3 = new Point(47, 16);
+        Point point4 = new Point(16, 34);
 
-            Rectangle rectangle = new Rectangle(point1, point2, point3, point4);
-            rectangle.render(graphics);
-            numberOfRectangle +=1;
-        }
+        Rectangle rectangle = new Rectangle(point1, point2, point3, point4);
+        rectangle.render(graphics);
 
         File file = new File(outputFilename);
         ImageIO.write(bufferedImage, "png", file);
