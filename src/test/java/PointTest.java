@@ -68,6 +68,13 @@ public class PointTest {
     }
 
     @Test
+    public void testConstructionViaString() throws ShapeException {
+        Point p1 = new Point(-97.25, 143.21);
+        Point p2 = new Point(p1.toString());
+        assertTrue(p2.toString().equals(p1.toString()));
+    }
+
+    @Test
     public void testMoveX() throws Exception {
         Point p1 = new Point(1,2);
 

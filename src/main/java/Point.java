@@ -27,6 +27,19 @@ public class Point implements Shapes {
     }
 
     /**
+     * Constructor
+     * @param string    A string which will be used as input stream -- must be a valid String.
+     */
+    public Point(String string) throws ShapeException {
+        if (string.toLowerCase().contains("point:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        this.x = Double.valueOf(strings[0]);
+        this.y = Double.valueOf(strings[1]);
+    }
+
+    /**
      * @return  The x-location of the point
      */
     public double getX() { return x; }
@@ -75,11 +88,12 @@ public class Point implements Shapes {
         moveY(deltaY);
     }
 
-    /**
+    /*
      * Copy the point
      * @return                  A new point with same x and y locations
      * @throws ShapeException   Should never thrown because the current x and y are valid
      */
+
     public Point copy() throws ShapeException {
         return new Point(x, y);
     }
@@ -101,7 +115,10 @@ public class Point implements Shapes {
     }
 
     @Override
-    public String toString(){
-
+    public String toString() {
+        return "Point:" +
+                String.valueOf(this.getX()) + "," +
+                String.valueOf(this.getY());
     }
+
 }

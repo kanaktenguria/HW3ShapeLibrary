@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4dc9ee3-4046-47a6-9e78-ea2353bd5fb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Shapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shapes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PointTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +59,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ShapeLibrary-master/ShapeLibrary-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39195403" />
@@ -90,33 +91,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.EmbeddedImageTest">
+  <component name="RunManager" selected="Gradle.Tests in 'ShapeLibrary.test'">
     <configuration name="EmbeddedImageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="EmbeddedImageTest.render" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.render&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -151,12 +132,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmbeddedImageTest.testConstructionViaString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.testConstructionViaString&quot;" />
+        <option name="scriptParameters" value="--tests &quot;PointTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -171,12 +152,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmbeddedImageTest.testScale" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PointTest.testConstructionViaString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.testScale&quot;" />
+        <option name="scriptParameters" value="--tests &quot;PointTest.testConstructionViaString&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'ShapeLibrary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -193,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
+        <item itemvalue="Gradle.PointTest" />
+        <item itemvalue="Gradle.PointTest.testConstructionViaString" />
         <item itemvalue="Gradle.EmbeddedImageTest" />
         <item itemvalue="Gradle.EmbeddedImageTest.testConstruction" />
-        <item itemvalue="Gradle.EmbeddedImageTest.testScale" />
-        <item itemvalue="Gradle.EmbeddedImageTest.render" />
-        <item itemvalue="Gradle.EmbeddedImageTest.testConstructionViaString" />
       </list>
     </recent_temporary>
   </component>
@@ -230,10 +231,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ShapeLibrary$EmbeddedImageTest.ic" NAME="EmbeddedImageTest Coverage Results" MODIFIED="1571785521663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$RectangleTest_testValidConstruction.ic" NAME="RectangleTest.testValidConstruction Coverage Results" MODIFIED="1571642116119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/ShapeLibrary$Tests_in__ShapeLibrary_test_.ic" NAME="Tests in 'ShapeLibrary.test' Coverage Results" MODIFIED="1571719210340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ShapeLibrary$Tests_in__ShapeLibrary_test_.ic" NAME="Tests in 'ShapeLibrary.test' Coverage Results" MODIFIED="1571786504071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$TriangleTest.ic" NAME="TriangleTest Coverage Results" MODIFIED="1571703163937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$TriangleTest_testValidConstruction.ic" NAME="TriangleTest.testValidConstruction Coverage Results" MODIFIED="1571699022372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$LineTest.ic" NAME="LineTest Coverage Results" MODIFIED="1571719316180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ShapeLibrary$PointTest.ic" NAME="PointTest Coverage Results" MODIFIED="1571786413846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$RectangleTest.ic" NAME="RectangleTest Coverage Results" MODIFIED="1571700321160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
