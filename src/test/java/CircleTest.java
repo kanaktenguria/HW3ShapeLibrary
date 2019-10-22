@@ -1,5 +1,11 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
 public class CircleTest {
@@ -251,4 +257,15 @@ public class CircleTest {
         assertEquals(2, myCircle.getCenter().getY(), 0);
     }
 
+    @Test
+    public void testRender() throws Exception {
+        BufferedImage bImage = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bImage.createGraphics();
+        graphics.setColor(Color.white);
+        Point center = new Point(20, 20);
+        Circle myCircle = new Circle(center, 10);
+        myCircle.render(graphics);
+
+        assertTrue(ImageIO.write(bImage, "png", new File("output/circle.png")));
+    }
 }
