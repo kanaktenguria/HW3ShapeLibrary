@@ -8,7 +8,7 @@ import java.awt.*;
  *
  */
 @SuppressWarnings("WeakerAccess")
-public class Rectangle {
+public class Rectangle implements Shapes{
     private Point point1;
     private Point point2;
     private Point point3;
@@ -84,6 +84,7 @@ public class Rectangle {
      * @param deltaY            The delta y-location by which the rectangle should be moved -- must be a valid double
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
         point2.move(deltaX, deltaY);
@@ -134,6 +135,7 @@ public class Rectangle {
     /**
      * @return  The area of the rectangle.
      */
+    @Override
     public double computeArea() {
         return (line1.computeLength()*line2.computeLength());
     }
@@ -156,10 +158,10 @@ public class Rectangle {
     /**
      * Renders the shape to a file.
      */
-    public void render(Graphics2D graphics) throws ShapeException {
+    @Override
+    public void render(Graphics2D graphics) throws ShapeException{
         int[] xCoordinate = new int[5];
         int[] yCoordinate = new int[5];
-
         xCoordinate[0] = (int) getPoint1().getX();
         xCoordinate[1] = (int) getPoint2().getX();
         xCoordinate[2] = (int) getPoint3().getX();

@@ -7,7 +7,7 @@ import java.awt.*;
  *
  */
 @SuppressWarnings("WeakerAccess")
-public class Circle {
+public class Circle implements Shapes {
     private Point center;
     private double radius;
 
@@ -57,6 +57,7 @@ public class Circle {
      * @param deltaY            a delta change for the y-location of center of the circle
      * @throws ShapeException   Exception thrown if either the delta x or y are not valid doubles
      */
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         center.move(deltaX, deltaY);
     }
@@ -77,6 +78,7 @@ public class Circle {
     /**
      * @return  The area of the circle.
      */
+    @Override
     public double computeArea() {
         return Math.PI * Math.pow(radius, 2);
     }
@@ -84,7 +86,8 @@ public class Circle {
     /**
      * Renders the shape to a file.
      */
-    public void render(Graphics2D graphics) {
+    @Override
+    public void render(Graphics2D graphics) throws ShapeException{
         int diameter = (int) (radius*2);
         int x = (int) (center.getX() - radius);
         int y = (int) (center.getY() - radius);

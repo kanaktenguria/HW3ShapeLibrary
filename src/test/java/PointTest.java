@@ -1,5 +1,10 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class PointTest {
@@ -222,5 +227,23 @@ public class PointTest {
         assertNotSame(p1, p2);
         assertEquals(p1.getX(), p2.getX(), 0);
         assertEquals(p1.getY(), p2.getY(), 0);
+    }
+
+    @Test
+    public void testComputeArea() throws Exception {
+        Point p1 = new Point(-123.45,-23.45);
+        assertEquals(0, p1.computeArea(),0);
+    }
+
+    @Test
+    public void testRender() throws Exception{
+        BufferedImage bImage = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bImage.createGraphics();
+        graphics.setColor(Color.white);
+        Point p1 = new Point(40, 100);
+
+        p1.render(graphics);
+
+        assertTrue(ImageIO.write(bImage, "png", new File("output/point.png")));
     }
 }

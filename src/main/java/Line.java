@@ -8,7 +8,7 @@ import java.awt.*;
  *
  */
 @SuppressWarnings("WeakerAccess")
-public class Line {
+public class Line implements Shapes {
     private Point point1;
     private Point point2;
 
@@ -56,6 +56,7 @@ public class Line {
      * @param deltaY            The delta y-location by which the line should be moved -- must be a valid double
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
         point2.move(deltaX, deltaY);
@@ -79,6 +80,8 @@ public class Line {
     /**
      * @return  zero as area of line.
      */
+
+    @Override
     public double computeArea(){return 0;}
 
     /**
@@ -89,6 +92,7 @@ public class Line {
      *                          >1 to grow.
      * @throws ShapeException   Exception thrown if the scale factor is not valid
      */
+
     public void scale(double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
         double x1 = point1.getX();
@@ -108,7 +112,8 @@ public class Line {
     /**
      * Renders the line to a file.
      */
-    public void render(Graphics2D graphics) {
+    @Override
+    public void render(Graphics2D graphics) throws ShapeException {
         int x1 = (int) (point1.getX());
         int y1 = (int) (point1.getY());
         int x2 = (int) (point2.getX());

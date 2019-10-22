@@ -7,7 +7,7 @@ import java.awt.*;
  *  This class represents triangle objects that can be moved or scaled.  Users of a triangle can also get its area.
  *
  */
-public class Triangle {
+public class Triangle implements Shapes{
     private Point point1;
     private Point point2;
     private Point point3;
@@ -71,6 +71,7 @@ public class Triangle {
      * @param deltaY            The delta y-location by which the triangle should be moved -- must be a valid double
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
+    @Override
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
         point2.move(deltaX, deltaY);
@@ -110,6 +111,7 @@ public class Triangle {
     /**
      * @return  The area of the triangle.
      */
+    @Override
     public double computeArea() {
         return ((point1.getX() * (point2.getY() - point3.getY()) + point2.getX() * (point3.getY() - point1.getY()) + point3.getX() * (point1.getY() - point2.getY())) / 2.0);
     }
@@ -130,10 +132,10 @@ public class Triangle {
     /**
      * Renders the shape to a file.
      */
-    public void render(Graphics2D graphics) throws ShapeException {
+    @Override
+    public void render(Graphics2D graphics) throws ShapeException{
         int[] xCoordinate = new int[4];
         int[] yCoordinate = new int[4];
-
         xCoordinate[0] = (int) this.getPoint1().getX();
         xCoordinate[1] = (int) this.getPoint2().getX();
         xCoordinate[2] = (int) this.getPoint3().getX();

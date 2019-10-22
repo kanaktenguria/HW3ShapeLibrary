@@ -155,4 +155,28 @@ public class LineTest {
 
         assertTrue(ImageIO.write(bImage, "png", new File("output/line.png")));
     }
+
+    @Test
+    public void testScale() throws ShapeException {
+        Point point1 = new Point(8, 20);
+        Point point2 = new Point(39, 2);
+        Line myLine = new Line(point1, point2);
+
+        myLine.scale(2);
+
+        assertEquals(16, myLine.getPoint1().getX(),0.1);
+        assertEquals(40, myLine.getPoint1().getY(),0.1);
+        assertEquals(78, myLine.getPoint2().getX(),0.1);
+        assertEquals(4, myLine.getPoint2().getY(),0.1);
+
+    }
+
+    @Test
+    public void testComputeArea() throws ShapeException {
+        Point point1 = new Point(8, 20);
+        Point point2 = new Point(39, 2);
+        Line myLine = new Line(point1, point2);
+
+        assertEquals(0,myLine.computeArea(),0);
+    }
 }
