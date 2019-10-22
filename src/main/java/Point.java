@@ -114,6 +114,10 @@ public class Point implements Shapes {
         graphics.drawLine(x, y, x, y);
     }
 
+    /**
+     *
+     * @return String of the object as a output stream.
+     */
     @Override
     public String toString() {
         return "Point:" +

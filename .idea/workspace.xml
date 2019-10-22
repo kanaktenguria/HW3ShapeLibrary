@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4dc9ee3-4046-47a6-9e78-ea2353bd5fb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PointTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +231,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ShapeLibrary$EmbeddedImageTest.ic" NAME="EmbeddedImageTest Coverage Results" MODIFIED="1571785521663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$RectangleTest_testValidConstruction.ic" NAME="RectangleTest.testValidConstruction Coverage Results" MODIFIED="1571642116119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/ShapeLibrary$Tests_in__ShapeLibrary_test_.ic" NAME="Tests in 'ShapeLibrary.test' Coverage Results" MODIFIED="1571786504071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ShapeLibrary$Tests_in__ShapeLibrary_test_.ic" NAME="Tests in 'ShapeLibrary.test' Coverage Results" MODIFIED="1571787829997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$TriangleTest.ic" NAME="TriangleTest Coverage Results" MODIFIED="1571703163937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$TriangleTest_testValidConstruction.ic" NAME="TriangleTest.testValidConstruction Coverage Results" MODIFIED="1571699022372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ShapeLibrary$LineTest.ic" NAME="LineTest Coverage Results" MODIFIED="1571719316180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

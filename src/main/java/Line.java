@@ -40,6 +40,18 @@ public class Line implements Shapes {
     }
 
     /**
+     * Constructor
+     * @param string    A string which will be used as input stream -- must be a valid String.
+     */
+    public Line(String string) throws ShapeException {
+        if (string.toLowerCase().contains("line:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        point1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        point2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+    }
+    /**
      * @return  The first point
      */
     public Point getPoint1() throws ShapeException { return point1.copy(); }
@@ -107,6 +119,20 @@ public class Line implements Shapes {
         point1.moveY(y1);
         point2.moveX(x2);
         point2.moveY(y2);
+    }
+
+    /**
+     *
+     * @return String of the object as a output stream.
+     */
+    @Override
+    public String toString() {
+        String outputStream = null;
+        try {
+            outputStream = "Line:" + String.valueOf(getPoint1().getX()) + "," + String.valueOf(getPoint1().getY()) + "," + String.valueOf(getPoint2().getX()) + "," + String.valueOf(getPoint2().getY());
+        } catch (ShapeException e) {
+        }
+        return outputStream;
     }
 
     /**
