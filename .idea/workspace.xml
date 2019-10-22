@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4dc9ee3-4046-47a6-9e78-ea2353bd5fb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/goku.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phoenix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReadImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Shapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shapes.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

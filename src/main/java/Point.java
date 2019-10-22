@@ -99,4 +99,9 @@ public class Point implements Shapes {
         int y = (int) (getY());
         graphics.drawLine(x, y, x, y);
     }
+
+    @Override
+    public String toString(){
+
+    }
 }

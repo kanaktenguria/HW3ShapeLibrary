@@ -5,7 +5,7 @@ public interface Shapes {
 
     public double computeArea() throws ShapeException;
 
-//    public String toString();
+    public String toString();
 
     public void render(Graphics2D graphics) throws ShapeException;
 }
