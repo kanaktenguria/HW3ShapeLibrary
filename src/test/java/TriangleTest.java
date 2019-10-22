@@ -46,43 +46,38 @@ public class TriangleTest {
 
     @Test
     public void move() throws ShapeException {
-        Point point1 = new Point(8, 20);
-        Point point2 = new Point(39, 2);
-        Point point3 = new Point(47, 16);
-        Point point4 = new Point(16, 34);
-        Rectangle myRectangle = new Rectangle(point1, point2, point3, point4);
+        Point point1 = new Point(-4, -1);
+        Point point2 = new Point(1, -6);
+        Point point3 = new Point(7, 5);
+        Triangle myTriangle = new Triangle(point1, point2, point3);
 
-        myRectangle.move(2,3);
+        myTriangle.move(2,3);
 
-        assertEquals(10, myRectangle.getPoint1().getX(),0.1);
-        assertEquals(23, myRectangle.getPoint1().getY(),0.1);
-        assertEquals(41, myRectangle.getPoint2().getX(),0.1);
-        assertEquals(5, myRectangle.getPoint2().getY(),0.1);
-        assertEquals(49, myRectangle.getPoint3().getX(),0.1);
-        assertEquals(19, myRectangle.getPoint3().getY(),0.1);
-        assertEquals(18, myRectangle.getPoint4().getX(),0.1);
-        assertEquals(37, myRectangle.getPoint4().getY(),0.1);
+        assertEquals(-2, myTriangle.getPoint1().getX(),0.1);
+        assertEquals(2, myTriangle.getPoint1().getY(),0.1);
+        assertEquals(3, myTriangle.getPoint2().getX(),0.1);
+        assertEquals(-3, myTriangle.getPoint2().getY(),0.1);
+        assertEquals(9, myTriangle.getPoint3().getX(),0.1);
+        assertEquals(8, myTriangle.getPoint3().getY(),0.1);
 
     }
 
     @Test
     public void scale() throws ShapeException {
-        Point point1 = new Point(8, 20);
-        Point point2 = new Point(39, 2);
-        Point point3 = new Point(47, 16);
-        Point point4 = new Point(16, 34);
-        Rectangle myRectangle = new Rectangle(point1, point2, point3, point4);
+        Point point1 = new Point(-2, 1);
+        Point point2 = new Point(4, 2);
+        Point point3 = new Point(1, 3);
+        Triangle myTriangle = new Triangle(point1, point2, point3);
 
-        myRectangle.scale(2);
+        myTriangle.scale(2);
 
-        assertEquals(8, myRectangle.getPoint1().getX(),0.1);
-        assertEquals(20, myRectangle.getPoint1().getY(),0.1);
-        assertEquals(78, myRectangle.getPoint2().getX(),0.1);
-        assertEquals(2, myRectangle.getPoint2().getY(),0.1);
-        assertEquals(94, myRectangle.getPoint3().getX(),0.1);
-        assertEquals(32, myRectangle.getPoint3().getY(),0.1);
-        assertEquals(16, myRectangle.getPoint4().getX(),0.1);
-        assertEquals(68, myRectangle.getPoint4().getY(),0.1);
+        assertEquals(-4, myTriangle.getPoint1().getX(),0.1);
+        assertEquals(2, myTriangle.getPoint1().getY(),0.1);
+        assertEquals(8, myTriangle.getPoint2().getX(),0.1);
+        assertEquals(4, myTriangle.getPoint2().getY(),0.1);
+        assertEquals(2, myTriangle.getPoint3().getX(),0.1);
+        assertEquals(6, myTriangle.getPoint3().getY(),0.1);
+
     }
 
 
