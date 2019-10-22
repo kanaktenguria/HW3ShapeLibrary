@@ -1,5 +1,10 @@
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class LineTest {
@@ -137,4 +142,17 @@ public class LineTest {
 
     }
 
+    @Test
+    public void testRender() throws Exception {
+        BufferedImage bImage = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bImage.createGraphics();
+        graphics.setColor(Color.white);
+        Point p1 = new Point(1,2);
+        Point p2 = new Point(40, 100);
+
+        Line myLine = new Line(p1, p2);
+        myLine.render(graphics);
+
+        assertTrue(ImageIO.write(bImage, "png", new File("output/line.png")));
+    }
 }

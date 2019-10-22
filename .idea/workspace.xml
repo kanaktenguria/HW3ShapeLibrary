@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4dc9ee3-4046-47a6-9e78-ea2353bd5fb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CircleTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CircleTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/LineTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/PointTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/RectangleTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShapeExceptionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TriangleTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ValidatorTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CircleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CircleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-LineTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PointTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-RectangleTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShapeExceptionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TriangleTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ValidatorTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/rectangle.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/rectangle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LineTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,13 +87,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CircleTest.testRender">
+  <component name="RunManager" selected="Gradle.LineTest.testRender">
     <configuration name="CircleTest.testRender" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;CircleTest.testRender&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LineTest.testRender" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;LineTest.testRender&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -195,33 +188,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TriangleTest.scale" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TriangleTest.scale&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LineTest.testRender" />
         <item itemvalue="Gradle.CircleTest.testRender" />
         <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
         <item itemvalue="Gradle.TriangleTest" />
         <item itemvalue="Gradle.TriangleTest.move" />
-        <item itemvalue="Gradle.TriangleTest.scale" />
       </list>
     </recent_temporary>
   </component>
