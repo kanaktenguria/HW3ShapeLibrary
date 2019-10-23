@@ -1,0 +1,8 @@
+Composite:4
+Circle:100.0,100.0,50.0
+Rectangle:-1.5,0.0,1.5,0.0,1.5,-2.0,-1.5,-2.0
+EmbeddedImage:goku.jpg,10.0,10.0,100,100
+Composite:2
+Triangle:-1.5,0.0,1.5,0.0,1.5,-2.0
+Line:-1.5,0.0,40.0,60.0
+

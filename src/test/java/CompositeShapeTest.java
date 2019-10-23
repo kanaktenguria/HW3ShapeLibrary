@@ -184,7 +184,7 @@ public class CompositeShapeTest {
         Circle circle = new Circle(100, 100, 50);
 
         String filename = "phoenix.png";
-        EmbeddedImage myImage = new EmbeddedImage(filename, 20, 20, 300, 150);
+        EmbeddedImage myImage = new EmbeddedImage(filename, 100, 100, 300, 150);
 
         CompositeShape compositeShape = new CompositeShape();
         compositeShape.addShape(myImage);
@@ -205,17 +205,14 @@ public class CompositeShapeTest {
 
     @Test
     public void toStringTest() throws Exception{
-        // Composite of composite and embedded image
-        Point p1 = new Point(0, 0);
-        Point p2 = new Point(40, 0);
-        Point p3 = new Point(40, 40);
-        Point p4 = new Point(0, 40);
+        Point point1 = new Point(-1.5, 0);
+        Point point2 = new Point(1.5, 0);
+        Point point3 = new Point(1.5, -2);
+        Point point4 = new Point(-1.5, -2);
+        Point point5 = new Point(40, 60);
 
-        Point p5 = new Point(40, 60);
-        Point p6 = new Point(0, 60);
-
-        Rectangle rectangle = new Rectangle(p1, p2, p5, p6);
-        Triangle triangle = new Triangle(p1, p2, p3);
+        Rectangle rectangle= new Rectangle(point1, point2, point3, point4);
+        Triangle triangle = new Triangle(point1, point2, point3);
 
         CompositeShape compositeShape1 = new CompositeShape();
         CompositeShape compositeShape2 = new CompositeShape();
