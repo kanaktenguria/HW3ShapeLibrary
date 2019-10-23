@@ -109,7 +109,7 @@ public class RectangleTest {
         Point point4 = new Point(16, 34);
         Rectangle myRectangle = new Rectangle(point1, point2, point3, point4);
 
-        myRectangle.scale(2);
+        myRectangle.scale(2.0);
 
         assertEquals(8, myRectangle.getPoint1().getX(),0.1);
         assertEquals(20, myRectangle.getPoint1().getY(),0.1);

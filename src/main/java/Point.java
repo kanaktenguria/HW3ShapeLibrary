@@ -105,6 +105,16 @@ public class Point implements Shapes {
     public double computeArea(){return 0;}
 
     /**
+     *
+     * @param scaleFactor does not effect point because point cannot be scaled.
+     */
+    @Override
+    public void scale(Double scaleFactor) {
+        x = this.x;
+        y = this.y;
+    }
+
+    /**
      * @return  Renders the point to a file
      */
     @Override

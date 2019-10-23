@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LineTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-10-23T04:18:30" hostname="Phoenix" time="0.018">
+<testsuite name="LineTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-10-23T05:01:09" hostname="Phoenix" time="0.016">
   <properties/>
   <testcase name="testComputeLength" classname="LineTest" time="0.002"/>
   <testcase name="testScale" classname="LineTest" time="0.001"/>
-  <testcase name="testMove" classname="LineTest" time="0.001"/>
+  <testcase name="testMove" classname="LineTest" time="0.0"/>
   <testcase name="testComputeSlope" classname="LineTest" time="0.0"/>
   <testcase name="testComputeArea" classname="LineTest" time="0.0"/>
   <testcase name="testConstructionViaString" classname="LineTest" time="0.0"/>
-  <testcase name="testInvalidConstruction" classname="LineTest" time="0.0"/>
-  <testcase name="testRender" classname="LineTest" time="0.01"/>
-  <testcase name="testValidConstruction" classname="LineTest" time="0.0"/>
+  <testcase name="testInvalidConstruction" classname="LineTest" time="0.001"/>
+  <testcase name="testRender" classname="LineTest" time="0.007"/>
+  <testcase name="testValidConstruction" classname="LineTest" time="0.001"/>
   <testcase name="testStrongEncapsulation" classname="LineTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -3,7 +3,9 @@ import org.junit.Test;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.PrintStream;
 
 import static org.junit.Assert.*;
 
@@ -74,6 +76,12 @@ public class PointTest {
         assertTrue(p2.toString().equals(p1.toString()));
     }
 
+    @Test
+    public void testScale() throws ShapeException {
+        Point p1 = new Point(1,2);
+        p1.scale(2.0);
+        assertEquals(1, p1.getX(),0);
+    }
     @Test
     public void testMoveX() throws Exception {
         Point p1 = new Point(1,2);

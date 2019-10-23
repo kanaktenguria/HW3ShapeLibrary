@@ -176,7 +176,7 @@ public class LineTest {
         Point point2 = new Point(39, 2);
         Line myLine = new Line(point1, point2);
 
-        myLine.scale(2);
+        myLine.scale(2.0);
 
         assertEquals(16, myLine.getPoint1().getX(),0.1);
         assertEquals(40, myLine.getPoint1().getY(),0.1);

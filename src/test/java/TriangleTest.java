@@ -81,7 +81,7 @@ public class TriangleTest {
         Point point3 = new Point(1, 3);
         Triangle myTriangle = new Triangle(point1, point2, point3);
 
-        myTriangle.scale(2);
+        myTriangle.scale(2.0);
 
         assertEquals(-4, myTriangle.getPoint1().getX(),0.1);
         assertEquals(2, myTriangle.getPoint1().getY(),0.1);

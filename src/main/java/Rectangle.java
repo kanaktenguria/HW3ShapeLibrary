@@ -115,7 +115,8 @@ public class Rectangle implements Shapes{
      *                          >1 to grow.
      * @throws ShapeException   Exception thrown if the scale factor is not valid
      */
-    public void scale(double scaleFactor) throws ShapeException {
+    @Override
+    public void scale(Double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
         double x2 = point2.getX();
         double x3 = point3.getX();

@@ -208,7 +208,7 @@ public class CircleTest {
         assertEquals(2, myCircle.getCenter().getY(), 0);
         assertEquals(5, myCircle.getRadius(), 0);
 
-        myCircle.scale(3);
+        myCircle.scale(3.0);
         assertEquals(1, myCircle.getCenter().getX(), 0);
         assertEquals(2, myCircle.getCenter().getY(), 0);
         assertEquals(15, myCircle.getRadius(), 0);

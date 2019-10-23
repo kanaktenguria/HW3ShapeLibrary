@@ -46,7 +46,7 @@ public class EmbeddedImageTest {
     public void testScale() throws Exception {
         String filename = "goku.jpg";
         EmbeddedImage myImage = new EmbeddedImage(filename, 5, 5, 35, 40);
-        myImage.scale(2);
+        myImage.scale(2.0);
         assertEquals(70,myImage.getHeight(),0);
         assertEquals(80,myImage.getWidth(),0);
     }

@@ -1,4 +1,4 @@
-import java.awt.*;
+import java.awt.Graphics2D;
 
 /**
  *
@@ -100,7 +100,8 @@ public class Triangle implements Shapes{
      *                          >1 to grow.
      * @throws ShapeException   Exception thrown if the scale factor is not valid
      */
-    public void scale(double scaleFactor) throws ShapeException {
+    @Override
+    public void scale(Double scaleFactor) throws ShapeException {
         Validator.validatePositiveDouble(scaleFactor, "Invalid scale factor");
         double x1 = point1.getX();
         double x2 = point2.getX();
@@ -147,7 +148,7 @@ public class Triangle implements Shapes{
      * Renders the shape to a file.
      */
     @Override
-    public void render(Graphics2D graphics) throws ShapeException{
+    public void render(Graphics2D graphics) throws ShapeException {
         int[] xCoordinate = new int[4];
         int[] yCoordinate = new int[4];
         xCoordinate[0] = (int) this.getPoint1().getX();
@@ -181,4 +182,5 @@ public class Triangle implements Shapes{
         } catch (ShapeException e) {}
         return outputStream;
     }
+
 }
