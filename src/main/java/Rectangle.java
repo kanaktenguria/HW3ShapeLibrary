@@ -58,6 +58,21 @@ public class Rectangle implements Shapes{
     }
 
     /**
+     * Constructor
+     * @param string    A string which will be used as input stream -- must be a valid String.
+     */
+    public Rectangle(String string) throws ShapeException {
+        if (string.toLowerCase().contains("rectangle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        point1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        point2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+        point3 = new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
+        point4 = new Point(Double.valueOf(strings[6]), Double.valueOf(strings[7]));
+        checkValidRectangle(point1, point2, point3,point4);
+    }
+    /**
      * @return  The first point
      */
     public Point getPoint1() throws ShapeException { return point1.copy(); }
@@ -155,6 +170,26 @@ public class Rectangle implements Shapes{
         assert Math.round(Math.sqrt(Math.pow(length, 2) + Math.pow(breadth, 2))) == Math.round(diagonalLength);
     }
 
+    /**
+     *
+     * @return String of the object as a output stream.
+     */
+    @Override
+    public String toString() {
+        String outputStream=null;
+        try {
+            outputStream = "Rectangle:" +
+                    String.valueOf(this.getPoint1().getX()) + "," +
+                    String.valueOf(this.getPoint1().getY()) + "," +
+                    String.valueOf(this.getPoint2().getX()) + "," +
+                    String.valueOf(this.getPoint2().getY()) + "," +
+                    String.valueOf(this.getPoint3().getX()) + "," +
+                    String.valueOf(this.getPoint3().getY()) + "," +
+                    String.valueOf(this.getPoint4().getX()) + "," +
+                    String.valueOf(this.getPoint4().getY());
+        } catch (ShapeException e) {}
+        return outputStream;
+    }
     /**
      * Renders the shape to a file.
      */

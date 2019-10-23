@@ -45,6 +45,18 @@ public class TriangleTest {
     }
 
     @Test
+    public void testConstructionViaString() throws ShapeException {
+        Triangle myTriangle1 = new Triangle(-4,-1,1,-6,7,5);
+        Triangle myTriangle = new Triangle(myTriangle1.toString());
+        assertEquals(-4, myTriangle.getPoint1().getX(),0);
+        assertEquals(-1, myTriangle.getPoint1().getY(),0);
+        assertEquals(1, myTriangle.getPoint2().getX(),0);
+        assertEquals(-6, myTriangle.getPoint2().getY(),0);
+        assertEquals(7, myTriangle.getPoint3().getX(),0);
+        assertEquals(5, myTriangle.getPoint3().getY(),0);
+    }
+
+    @Test
     public void move() throws ShapeException {
         Point point1 = new Point(-4, -1);
         Point point2 = new Point(1, -6);

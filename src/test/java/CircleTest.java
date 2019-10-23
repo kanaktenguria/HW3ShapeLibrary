@@ -122,6 +122,15 @@ public class CircleTest {
     }
 
     @Test
+    public void testConstructionViaString() throws ShapeException {
+        Circle myCircle1 = new Circle(5,5,10);
+        Circle myCircle2 = new Circle(myCircle1.toString());
+        assertEquals(5,myCircle2.getCenter().getX(),0);
+        assertEquals(5,myCircle2.getCenter().getY(),0);
+        assertEquals(10,myCircle2.getRadius(),0);
+    }
+
+    @Test
     public void testMove() throws ShapeException {
         Circle myCircle = new Circle(1, 2, 5);
         assertEquals(1, myCircle.getCenter().getX(), 0);

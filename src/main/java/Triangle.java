@@ -50,6 +50,20 @@ public class Triangle implements Shapes{
     }
 
     /**
+     * Constructor
+     * @param string    A string which will be used as input stream -- must be a valid String.
+     */
+    public Triangle(String string) throws ShapeException {
+        if (string.toLowerCase().contains("triangle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        point1 = new Point(Double.valueOf(strings[0]), Double.valueOf(strings[1]));
+        point2 = new Point(Double.valueOf(strings[2]), Double.valueOf(strings[3]));
+        point3 = new Point(Double.valueOf(strings[4]), Double.valueOf(strings[5]));
+    }
+
+    /**
      * @return  The first point
      */
     public Point getPoint1() throws ShapeException { return point1.copy(); }
@@ -147,5 +161,24 @@ public class Triangle implements Shapes{
         yCoordinate[3] = yCoordinate[0];
 
         graphics.drawPolyline(xCoordinate, yCoordinate, 4);
+    }
+
+    /**
+     *
+     * @return String of the object as a output stream.
+     */
+    @Override
+    public String toString() {
+        String outputStream = null;
+        try {
+            outputStream = "Triangle:" +
+                    String.valueOf(getPoint1().getX()) + "," +
+                    String.valueOf(getPoint1().getY()) + "," +
+                    String.valueOf(getPoint2().getX()) + "," +
+                    String.valueOf(getPoint2().getY()) + "," +
+                    String.valueOf(getPoint3().getX()) + "," +
+                    String.valueOf(getPoint3().getY());
+        } catch (ShapeException e) {}
+        return outputStream;
     }
 }

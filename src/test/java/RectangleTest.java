@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.w3c.dom.css.Rect;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -63,6 +64,20 @@ public class RectangleTest {
         new Rectangle(null, null, null, null);
         new Rectangle(point1, point2, null, point4);
         new Rectangle(point1, null, point3, point4);
+    }
+
+    @Test
+    public void testConstructionViaString() throws ShapeException {
+        Rectangle myRectangle1 = new Rectangle(0,0,4,0,4,-4,0,-4);
+        Rectangle myRectangle2 = new Rectangle(myRectangle1.toString());
+        assertEquals(0, myRectangle2.getPoint1().getX(),0);
+        assertEquals(0, myRectangle2.getPoint1().getY(),0);
+        assertEquals(4, myRectangle2.getPoint2().getX(),0);
+        assertEquals(0, myRectangle2.getPoint2().getY(),0);
+        assertEquals(4, myRectangle2.getPoint3().getX(),0);
+        assertEquals(-4, myRectangle2.getPoint3().getY(),0);
+        assertEquals(0, myRectangle2.getPoint4().getX(),0);
+        assertEquals(-4, myRectangle2.getPoint4().getY(),0);
     }
 
     @Test

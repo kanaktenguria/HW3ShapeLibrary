@@ -52,10 +52,8 @@ public class Circle implements Shapes {
         String[] strings = string.split(",");
         double x = Double.valueOf(strings[0]);
         double y = Double.valueOf(strings[1]);
-        double diameter = Double.valueOf(strings[2]);
-
+        radius = Double.valueOf(strings[2]);
         center = new Point(x,y);
-        radius= diameter/2;
     }
     /**
      * @return  The center of the circle
@@ -103,7 +101,11 @@ public class Circle implements Shapes {
      *
      * @return String of the object as a output stream.
      */
-
+    @Override
+    public String toString() {
+        return "Circle:" +
+                String.valueOf(center.getX()) + "," + String.valueOf(center.getY()) + "," + String.valueOf(radius);
+    }
 
     /**
      * Renders the shape to a file.

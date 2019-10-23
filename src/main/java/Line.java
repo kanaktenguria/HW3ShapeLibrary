@@ -130,8 +130,7 @@ public class Line implements Shapes {
         String outputStream = null;
         try {
             outputStream = "Line:" + String.valueOf(getPoint1().getX()) + "," + String.valueOf(getPoint1().getY()) + "," + String.valueOf(getPoint2().getX()) + "," + String.valueOf(getPoint2().getY());
-        } catch (ShapeException e) {
-        }
+        } catch (ShapeException e) {}
         return outputStream;
     }
 
