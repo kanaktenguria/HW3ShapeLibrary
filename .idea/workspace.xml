@@ -2,62 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4dc9ee3-4046-47a6-9e78-ea2353bd5fb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmbeddedImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EmbeddedImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Line.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Shapes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Shapes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CircleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/EmbeddedImageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/EmbeddedImageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LineTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/PointTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/PointTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/RectangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/RectangleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TriangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TriangleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CircleTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CircleTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/EmbeddedImageTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/EmbeddedImageTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/LineTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/LineTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/PointTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/PointTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/RectangleTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/RectangleTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShapeExceptionTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ShapeExceptionTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TriangleTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TriangleTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ValidatorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ValidatorTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CircleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CircleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-EmbeddedImageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-EmbeddedImageTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-LineTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-LineTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PointTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-PointTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-RectangleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-RectangleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShapeExceptionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ShapeExceptionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TriangleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TriangleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ValidatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ValidatorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmbeddedImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Shapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shapes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CircleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmbeddedImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmbeddedImageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RectangleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CompositeShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompositeShapeTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
