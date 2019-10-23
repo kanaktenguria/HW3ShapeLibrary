@@ -45,16 +45,16 @@ public class CompositeShapeTest {
         assertEquals(compositeShape.getItemCount(), 4);
 
         compositeShape.removeShape(circle);
-        assertEquals(compositeShape.getItemCount(), 4);
-
-        compositeShape.removeShape(line);
         assertEquals(compositeShape.getItemCount(), 3);
 
-        compositeShape.removeShape(triangle);
+        compositeShape.removeShape(line);
         assertEquals(compositeShape.getItemCount(), 2);
 
-        compositeShape.removeShape(rectangle);
+        compositeShape.removeShape(triangle);
         assertEquals(compositeShape.getItemCount(), 1);
+
+        compositeShape.removeShape(rectangle);
+        assertEquals(compositeShape.getItemCount(), 0);
 
     }
 
@@ -111,18 +111,39 @@ public class CompositeShapeTest {
         triangle.move(deltaX, deltaY);
         line.move(deltaX, deltaY);
         circle.move(deltaX, deltaY);
-        point1.move(deltaX, deltaY);
 
         CompositeShape deltaCompositeShape = new CompositeShape();
         deltaCompositeShape.addShape(triangle);
         deltaCompositeShape.addShape(rectangle);
         deltaCompositeShape.addShape(line);
         deltaCompositeShape.addShape(circle);
-        deltaCompositeShape.addShape(point1);
 
         assertEquals(deltaCompositeShape.getItemCount(), compositeShape.getItemCount());
         assertEquals(deltaCompositeShape.computeArea(), compositeShape.computeArea(),0.1);
         assertTrue(deltaCompositeShape.toString().equals(compositeShape.toString()));
+    }
+
+    @Test
+    public void testScale() throws Exception {
+        Point point1 = new Point(-1.5, 0);
+        Point point2 = new Point(1.5, 0);
+        Point point3 = new Point(1.5, -2);
+        Point point4 = new Point(-1.5, -2);
+        Point point5 = new Point(40, 60);
+
+        Rectangle rectangle= new Rectangle(point1, point2, point3, point4);
+        Triangle triangle = new Triangle(point1, point2, point3);
+        Line line = new Line(point1, point5);
+        Circle circle = new Circle(100, 100, 50);
+
+        CompositeShape compositeShape = new CompositeShape();
+        compositeShape.addShape(triangle);
+        compositeShape.addShape(rectangle);
+        compositeShape.addShape(line);
+        compositeShape.addShape(circle);
+        compositeShape.scale(2.0);
+
+        assertEquals( 80,line.getPoint2().getX(),0.1);
     }
 
     @Test
@@ -194,21 +215,16 @@ public class CompositeShapeTest {
         Point p6 = new Point(0, 60);
 
         Rectangle rectangle = new Rectangle(p1, p2, p5, p6);
-        Square square = new Square(p1, p2, p3, p4);
         Triangle triangle = new Triangle(p1, p2, p3);
-        Ellipse ellipse = new Ellipse(100, 100, 50, 40);
 
-        CompositeShape compositeShape = new CompositeShape();
-        CompositeShape compositeShapeInner = new CompositeShape();
+        CompositeShape compositeShape1 = new CompositeShape();
+        CompositeShape compositeShape2 = new CompositeShape();
 
-        compositeShape.addShape(triangle);
-        compositeShape.addShape(rectangle);
+        compositeShape1.addShape(triangle);
+        compositeShape1.addShape(rectangle);
+        compositeShape2.addShape(triangle);
+        compositeShape2.addShape(rectangle);
 
-        compositeShapeInner.addShape(square);
-        compositeShapeInner.addShape(ellipse);
-
-        compositeShape.addShape(compositeShapeInner);
-//        CompositeShape newComposite = new CompositeShape(compositeShape.toString());
-        // that's because compositeShapeInner count as 1
+        assertTrue(compositeShape1.toString().equals(compositeShape2.toString()));
     }
 }
