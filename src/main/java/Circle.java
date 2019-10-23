@@ -42,6 +42,22 @@ public class Circle implements Shapes {
     }
 
     /**
+     * Constructor
+     * @param string    A string which will be used as input stream -- must be a valid String.
+     */
+    public Circle(String string) throws ShapeException {
+       if (string.toLowerCase().contains("circle:"))
+            string = string.split(":")[1];
+
+        String[] strings = string.split(",");
+        double x = Double.valueOf(strings[0]);
+        double y = Double.valueOf(strings[1]);
+        double diameter = Double.valueOf(strings[2]);
+
+        center = new Point(x,y);
+        radius= diameter/2;
+    }
+    /**
      * @return  The center of the circle
      */
     public Point getCenter() throws ShapeException { return center.copy(); }
@@ -82,6 +98,12 @@ public class Circle implements Shapes {
     public double computeArea() {
         return Math.PI * Math.pow(radius, 2);
     }
+
+    /**
+     *
+     * @return String of the object as a output stream.
+     */
+
 
     /**
      * Renders the shape to a file.
