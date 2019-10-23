@@ -61,6 +61,20 @@ public class LineTest {
         }
     }
 
+    @Test
+    public void testConstructionViaString() throws ShapeException {
+        Point p1 = new Point(1,2);
+        Point p2 = new Point(4, 10);
+
+        Line myLine1 = new Line(p1, p2);
+        Line myLine2 = new Line(myLine1.toString());
+
+        assertEquals(1,myLine2.getPoint1().getX(),0);
+        assertEquals(2,myLine2.getPoint1().getY(),0);
+        assertEquals(4,myLine2.getPoint2().getX(),0);
+        assertEquals(10,myLine2.getPoint2().getY(),0);
+        assertTrue(myLine2.toString().equals(myLine1.toString()));
+    }
 
     @Test
     public void testMove() throws ShapeException {

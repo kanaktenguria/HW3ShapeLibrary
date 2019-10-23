@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4dc9ee3-4046-47a6-9e78-ea2353bd5fb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LineTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'ShapeLibrary.test'">
+  <component name="RunManager" selected="Gradle.LineTest.testConstructionViaString">
     <configuration name="EmbeddedImageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,12 +111,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmbeddedImageTest.testConstruction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LineTest.testConstructionViaString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmbeddedImageTest.testConstruction&quot;" />
+        <option name="scriptParameters" value="--tests &quot;LineTest.testConstructionViaString&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -194,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LineTest.testConstructionViaString" />
         <item itemvalue="Gradle.Tests in 'ShapeLibrary.test'" />
         <item itemvalue="Gradle.PointTest" />
         <item itemvalue="Gradle.PointTest.testConstructionViaString" />
         <item itemvalue="Gradle.EmbeddedImageTest" />
-        <item itemvalue="Gradle.EmbeddedImageTest.testConstruction" />
       </list>
     </recent_temporary>
   </component>
