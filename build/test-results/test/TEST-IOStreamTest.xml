@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IOStreamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T07:52:15" hostname="Phoenix" time="0.024">
+<testsuite name="IOStreamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-23T18:32:01" hostname="Phoenix" time="0.045">
   <properties/>
-  <testcase name="readWriteShape" classname="IOStreamTest" time="0.024"/>
+  <testcase name="readWriteShape" classname="IOStreamTest" time="0.045"/>
   <system-out><![CDATA[
 Read Object from file: 
 Composite:4

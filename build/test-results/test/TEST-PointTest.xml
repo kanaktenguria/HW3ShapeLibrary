@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PointTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-10-23T07:52:15" hostname="Phoenix" time="0.025">
+<testsuite name="PointTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-10-23T18:32:01" hostname="Phoenix" time="0.016">
   <properties/>
-  <testcase name="testClone" classname="PointTest" time="0.0"/>
+  <testcase name="testClone" classname="PointTest" time="0.001"/>
   <testcase name="testMoveX" classname="PointTest" time="0.0"/>
   <testcase name="testMoveY" classname="PointTest" time="0.0"/>
   <testcase name="testScale" classname="PointTest" time="0.0"/>
-  <testcase name="testMove" classname="PointTest" time="0.0"/>
+  <testcase name="testMove" classname="PointTest" time="0.001"/>
   <testcase name="testComputeArea" classname="PointTest" time="0.0"/>
-  <testcase name="testConstructionViaString" classname="PointTest" time="0.001"/>
+  <testcase name="testConstructionViaString" classname="PointTest" time="0.0"/>
   <testcase name="testInvalidConstruction" classname="PointTest" time="0.0"/>
-  <testcase name="testRender" classname="PointTest" time="0.017"/>
-  <testcase name="testValidConstruction" classname="PointTest" time="0.004"/>
+  <testcase name="testRender" classname="PointTest" time="0.01"/>
+  <testcase name="testValidConstruction" classname="PointTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EmbeddedImageTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-10-23T07:52:15" hostname="Phoenix" time="0.053">
+<testsuite name="EmbeddedImageTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-10-23T18:32:01" hostname="Phoenix" time="0.064">
   <properties/>
-  <testcase name="testScale" classname="EmbeddedImageTest" time="0.017"/>
+  <testcase name="testScale" classname="EmbeddedImageTest" time="0.02"/>
   <testcase name="testMove" classname="EmbeddedImageTest" time="0.0"/>
-  <testcase name="testConstruction" classname="EmbeddedImageTest" time="0.0"/>
-  <testcase name="render" classname="EmbeddedImageTest" time="0.034"/>
+  <testcase name="testConstruction" classname="EmbeddedImageTest" time="0.001"/>
+  <testcase name="render" classname="EmbeddedImageTest" time="0.04"/>
   <testcase name="testComputeArea" classname="EmbeddedImageTest" time="0.0"/>
   <testcase name="testConstructionViaString" classname="EmbeddedImageTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

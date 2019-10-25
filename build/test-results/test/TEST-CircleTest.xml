@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CircleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-23T07:52:15" hostname="Phoenix" time="0.221">
+<testsuite name="CircleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-23T18:32:00" hostname="Phoenix" time="0.451">
   <properties/>
-  <testcase name="testScale" classname="CircleTest" time="0.006"/>
+  <testcase name="testScale" classname="CircleTest" time="0.008"/>
   <testcase name="testMove" classname="CircleTest" time="0.0"/>
-  <testcase name="testComputeArea" classname="CircleTest" time="0.001"/>
+  <testcase name="testComputeArea" classname="CircleTest" time="0.0"/>
   <testcase name="testConstructionViaString" classname="CircleTest" time="0.003"/>
-  <testcase name="testInvalidConstruction" classname="CircleTest" time="0.0"/>
-  <testcase name="testRender" classname="CircleTest" time="0.206"/>
-  <testcase name="testValidConstruction" classname="CircleTest" time="0.001"/>
-  <testcase name="testStrongEncapsulation" classname="CircleTest" time="0.001"/>
+  <testcase name="testInvalidConstruction" classname="CircleTest" time="0.001"/>
+  <testcase name="testRender" classname="CircleTest" time="0.437"/>
+  <testcase name="testValidConstruction" classname="CircleTest" time="0.0"/>
+  <testcase name="testStrongEncapsulation" classname="CircleTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

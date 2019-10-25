@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CompositeShapeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-10-23T07:52:15" hostname="Phoenix" time="0.282">
+<testsuite name="CompositeShapeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-10-23T18:32:00" hostname="Phoenix" time="0.281">
   <properties/>
-  <testcase name="testScale" classname="CompositeShapeTest" time="0.009"/>
-  <testcase name="testMove" classname="CompositeShapeTest" time="0.002"/>
-  <testcase name="testAddRemoveShape" classname="CompositeShapeTest" time="0.002"/>
-  <testcase name="testComputeArea" classname="CompositeShapeTest" time="0.002"/>
+  <testcase name="testScale" classname="CompositeShapeTest" time="0.034"/>
+  <testcase name="testMove" classname="CompositeShapeTest" time="0.001"/>
+  <testcase name="testAddRemoveShape" classname="CompositeShapeTest" time="0.0"/>
+  <testcase name="testComputeArea" classname="CompositeShapeTest" time="0.0"/>
   <testcase name="testCompositeInsideComposite" classname="CompositeShapeTest" time="0.0"/>
-  <testcase name="toStringTest" classname="CompositeShapeTest" time="0.014"/>
-  <testcase name="testRender" classname="CompositeShapeTest" time="0.245"/>
+  <testcase name="toStringTest" classname="CompositeShapeTest" time="0.0"/>
+  <testcase name="testRender" classname="CompositeShapeTest" time="0.244"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
